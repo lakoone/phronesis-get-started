@@ -1,0 +1,18 @@
+logo:
+  image: ./redocly-logo.png
+breadcrumbs:
+  hide: true
+footer:
+  items:
+    - group: Redocly
+      items:
+        - href: https://redocly.com
+          label: Redocly.com
+        - href: https://redocly.com/docs
+          label: Redocly docs
+    - group: Docs Resources
+      items:
+        - href: https://markdoc.dev/
+          label: Markdoc
+        - href: https://openapis.org
+          label: OpenAPI
