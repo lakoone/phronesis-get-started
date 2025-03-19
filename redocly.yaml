@@ -2,6 +2,24 @@ logo:
   image: ./redocly-logo.png
 breadcrumbs:
   hide: true
+navbar:
+  items:
+    - page: projects/1/apis/museum.yaml
+      label: Museum
+    - page: projects/1/apis/petstore.yaml
+      label: Petstore
+    - page: projects/1/apis/trainTravel.yaml
+      label: Train travel
+catalog:
+  showdown:
+    title: API showdown
+    description: 'This is a showdown of showcase APIs'
+    slug: /catalog/
+    items:
+      - directory: ./
+        flatten: true
+        includeByMetadata:
+          type: [openapi]
 footer:
   items:
     - group: Redocly
