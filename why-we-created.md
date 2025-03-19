@@ -15,7 +15,7 @@ The sidebar approach keeps all navigation options visible at all times, making i
 The navbar approach keeps navigation at the top of the page, which is a familiar pattern for many users. It works well for a limited number of items but can become unwieldy with dropdown menus for many products.
 
 ### Option 3: Catalog
-![![image copy 2.png](./projects/1/image%20copy%202.png)
+![image copy 2.png](./projects/1/image%20copy%202.png)
 
 The catalog approach presents products in a grid or list view, allowing users to visually scan and compare options. It scales well for many products and provides more space for product information and imagery.
 
