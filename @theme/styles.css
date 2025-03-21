@@ -1,0 +1,6 @@
+:root {
+  --heading-text-color: rgb(57, 107, 141);
+}
+:root.dark {
+  --heading-text-color: rgb(153, 215, 177);
+}
