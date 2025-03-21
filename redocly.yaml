@@ -1,5 +1,8 @@
 logo:
-  image: ./redocly-logo.png
+  srcSet: "./redocly-logo.png dark, https://redocly.com/assets/redocly-white-logo.176e3e2d646a542bdc2590ae497b3b8ee3825605652af49b8790ab9e7a26335d.9c1bb791.svg light"
+redirects:
+  '/petstore/':
+    to: '/petsstore/'
 breadcrumbs:
   hide: true
 footer:
