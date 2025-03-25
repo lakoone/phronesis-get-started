@@ -1,7 +1,9 @@
-- page: index.md
-  label: Start here!!!!
-- href: https://redocly.com
-- page: style-guide.md
-- page: about.md
-- group: Museum API
-  page: ./openapi.yaml
+- group: Museum
+  items:
+    - page: projects/1/apis/museum.yaml
+- group: Petsstore
+  items:
+    - page: projects/1/apis/petsstore.yaml
+- group: Train Travel
+  items:
+    - page: projects/1/apis/trainTravel.yaml
