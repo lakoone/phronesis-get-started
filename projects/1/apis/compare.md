@@ -1,3 +1,19 @@
+---
+feedback:
+  settings:
+    label: Do you like our page?
+    submitText: Thanks for your feedback!
+    reasons:
+      component: radio
+      label: Tell us more about the page.
+      items:
+        - The content has great examples.
+        - The content is thoroughly detailed.
+    comment:
+      likeLabel: What was most helpful?
+      dislikeLabel: What can we improve?
+---
+
 Museum
 | Feature  | Count  |
 | --- | --- |
@@ -11,7 +27,7 @@ Museum
 | 👷 Operations | 8 |
 | 🔖 Tags | 3 |
 
-Petsstore
+Petstore
 | Feature  | Count  |
 | --- | --- |
 | 🚗 References | 7 |
