@@ -6,6 +6,8 @@ feedback:
       label: Tell us more about the page
 ---
 
+{% partial file="/_partials/warning.md" /%}
+
 # About
 
 This is an _excellent_ project.

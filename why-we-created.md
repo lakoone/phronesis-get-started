@@ -1,3 +1,4 @@
+{% partial file="/_partials/warning.md" /%}
 # Why We Created This Information Architecture
 
 ## Comparing Different Approaches
