@@ -1,3 +1,4 @@
+{% partial file="/_partials/warning.md" /%}
 # Start something new
 
 There's a real excitement to starting something new.

@@ -13,6 +13,7 @@ feedback:
       likeLabel: What was most helpful?
       dislikeLabel: What can we improve?
 ---
+{% partial file="/_partials/warning.md" /%}
 # Redocly Museum API - Getting Started Guide
 
 ## Introduction

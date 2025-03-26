@@ -27,6 +27,9 @@ catalog:
         flatten: true
         includeByMetadata:
           type: [openapi]
+markdown:
+  toc:
+    header: Page headings
 footer:
   items:
     - group: Redocly
