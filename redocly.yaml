@@ -2,19 +2,21 @@ logo:
   srcSet: "https://redocly.com/assets/redocly-white-logo.176e3e2d646a542bdc2590ae497b3b8ee3825605652af49b8790ab9e7a26335d.9c1bb791.svg light, ./images/redocly-logo.png dark"
 breadcrumbs:
   hide: true
-redirects:
-  '/projects/1/apis/petstore/': 
-    to: '/projects/1/apis/petsstore/'
+feedback:
+  type: mood
+  settings:
+    comment:
+      satisfiedLabel: What did you like most about this page?
+      dissatisfiedLabel: What didn't you like about this page?
+      neutralLabel: What could we improve on this page?
 navbar:
   items:
     - page: projects/1/apis/museum.yaml
       label: Museum
-    - page: projects/1/apis/petsstore.yaml
-      label: Petsstore
+    - page: projects/1/apis/petstore.yaml
+      label: Petstore
     - page: projects/1/apis/trainTravel.yaml
       label: Train travel
-    - page: projects/1/apis/petstore.yaml
-      label: Pet
 catalog:
   showdown:
     title: API showdown

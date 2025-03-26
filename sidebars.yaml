@@ -1,9 +1,9 @@
 - group: Museum
   items:
     - page: projects/1/apis/museum.yaml
-- group: Petsstore
+- group: Petstore
   items:
-    - page: projects/1/apis/petsstore.yaml
+    - page: projects/1/apis/petstore.yaml
 - group: Train Travel
   items:
     - page: projects/1/apis/trainTravel.yaml
