@@ -1,0 +1,251 @@
+openapi: 3.1.0
+info:
+  title: Kitchen API
+  description: API for managing kitchen ingredients
+  version: 1.0.0
+servers:
+  - url: '{server}'
+    variables:
+      server:
+        description: Server URL depends on the tenant
+        default: https://api.example.com
+paths:
+  /ingredients:
+    post:
+      summary: Add a new ingredient
+      operationId: createIngredient
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/IngredientRequest'
+      responses:
+        '201':
+          description: Successfully created ingredient
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Ingredient'
+        '400':
+          description: Bad request
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '401':
+          description: Unauthorized
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Error'
+    get:
+      summary: List ingredients
+      operationId: listIngredients
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: limit
+          in: query
+          description: Maximum number of ingredients to return
+          schema:
+            type: integer
+            default: 10
+        - name: cursor
+          in: query
+          description: Cursor for pagination
+          schema:
+            type: string
+      responses:
+        '200':
+          description: List of ingredients
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/IngredientList'
+        '401':
+          description: Unauthorized
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Error'
+  /ingredients/{ingredientId}:
+    get:
+      summary: Get ingredient by ID
+      operationId: getIngredient
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: ingredientId
+          in: path
+          required: true
+          description: ID of the ingredient to retrieve
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Ingredient details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Ingredient'
+        '401':
+          description: Unauthorized
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: Ingredient not found
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Error'
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+  schemas:
+    IngredientRequest:
+      type: object
+      required:
+        - kitchenId
+        - name
+        - quantity
+        - unit
+      properties:
+        kitchenId:
+          type: string
+          example: "altman-family"
+        name:
+          type: string
+          example: "broccoli"
+        quantity:
+          type: number
+          format: float
+          example: 1.5
+        unit:
+          type: string
+          example: "cups"
+        useBefore:
+          type: string
+          format: date-time
+          example: "2019-08-24T14:15:22Z"
+    Ingredient:
+      type: object
+      required:
+        - id
+        - object
+        - kitchenId
+        - name
+        - quantity
+        - unit
+        - createdAt
+      properties:
+        id:
+          type: string
+          format: uuid
+          example: "497f6eca-6276-4993-bfeb-53cbbbba6f08"
+        object:
+          type: string
+          enum: [ingredient]
+          example: "ingredient"
+        kitchenId:
+          type: string
+          example: "altman-family"
+        name:
+          type: string
+          example: "broccoli"
+        quantity:
+          type: number
+          format: float
+          example: 1.5
+        unit:
+          type: string
+          example: "cups"
+        useBefore:
+          type: string
+          format: date-time
+          example: "2019-08-24T14:15:22Z"
+        createdAt:
+          type: string
+          format: date-time
+          example: "2019-08-24T14:15:22Z"
+    Page:
+      type: object
+      required:
+        - endCursor
+        - startCursor
+        - hasNextPage
+        - hasPrevPage
+        - limit
+        - total
+      properties:
+        endCursor:
+          type: string
+          example: "ZG9uJ3QgZGVjb2RlIG1l"
+        startCursor:
+          type: string
+          example: "ZG9uJ3QgZGVjb2RlIG1l"
+        hasNextPage:
+          type: boolean
+          example: false
+        hasPrevPage:
+          type: boolean
+          example: false
+        limit:
+          type: integer
+          example: 10
+        total:
+          type: integer
+          example: 0
+    IngredientList:
+      type: object
+      required:
+        - object
+        - page
+        - items
+        - total
+      properties:
+        object:
+          type: string
+          enum: [list]
+          example: "list"
+        page:
+          $ref: '#/components/schemas/Page'
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/Ingredient'
+        total:
+          type: integer
+          example: 1
+    Error:
+      type: object
+      required:
+        - type
+        - title
+        - status
+        - detail
+      properties:
+        type:
+          type: string
+          example: object
+        title:
+          type: string
+          example: "Invalid Request"
+        status:
+          type: integer
+          example: 400
+        detail:
+          type: string
+          example: "The request contains invalid parameters"
+        instance:
+          type: string
+          format: uri
+          example: "urn:uuid:497f6eca-6276-4993-bfeb-53cbbbba6f08" 
