@@ -17,6 +17,8 @@ navbar:
       label: Petstore
     - page: projects/1/apis/trainTravel.yaml
       label: Train travel
+    - page: ./projects/6/kitchen.yaml
+      label: Kitchen API
 catalog:
   showdown:
     title: API showdown
