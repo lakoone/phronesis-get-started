@@ -1,0 +1,3 @@
+- page: kitchen.yaml
+- page: ../../remote-folder/clean-the-kitchen.md
+  label: Clean kitchen
