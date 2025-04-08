@@ -9,10 +9,18 @@ feedback:
       satisfiedLabel: What did you like most about this page?
       dissatisfiedLabel: What didn't you like about this page?
       neutralLabel: What could we improve on this page?
+l10n:
+  defaultLocale: en
+  locales:
+    - code: en
+      name: English
+    - code: ua
+      name: Ukrainian
 navbar:
   items:
     - page: projects/1/apis/museum.yaml
       label: Museum
+      labelTranslationKey: navbar.products.redocly-museum
     - page: projects/1/apis/petstore.yaml
       label: Petstore
     - page: projects/1/apis/trainTravel.yaml
