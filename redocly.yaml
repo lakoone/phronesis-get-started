@@ -56,3 +56,5 @@ footer:
           label: OpenAPI
 versionPicker:
   showForUnversioned: true
+
+requiresLogin: true
