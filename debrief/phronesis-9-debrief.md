@@ -1,6 +1,7 @@
-# Project 8: Versioned content
+# Project 9: Localization
 ## What made you smile?
-- Easy to do, it took 30 min
+- Easy to add localization into project.
 
 ## What did you find confusing?
-  * Nothing
+  * hard to work with openapi localization. 
+  Because you should track all changes in every file.
