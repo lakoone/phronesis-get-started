@@ -36,7 +36,14 @@ navbar:
       label: Kitchen API
     - page: admin-api/admin-api.yaml
       label: Admin
-  
+products:
+  museum:
+    name: Museum Showcase
+    folder: products/museum/
+    icon: ./images/redocly-logo.png
+  api-hub:
+    name: Api Hub
+    folder: products/api-hub/
 catalog:
   showdown:
     title: API showdown
