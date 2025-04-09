@@ -16,6 +16,13 @@ l10n:
       name: English
     - code: ua
       name: Ukrainian
+rbac:
+  content:
+    '/admin-api/**':
+      redocly.owners: admin
+      redocly.members: read
+      "Beta Testers": read 
+ 
 navbar:
   items:
     - page: projects/1/apis/museum.yaml
@@ -27,6 +34,9 @@ navbar:
       label: Train travel
     - page: ./projects/6/kitchen.yaml
       label: Kitchen API
+    - page: admin-api/admin-api.yaml
+      label: Admin
+  
 catalog:
   showdown:
     title: API showdown
@@ -57,4 +67,3 @@ footer:
 versionPicker:
   showForUnversioned: true
 
-requiresLogin: true

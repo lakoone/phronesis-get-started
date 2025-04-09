@@ -14,3 +14,7 @@
 - group: Debriefs
   items:
     - directory: debrief
+- group: Admin
+  items:
+    - page: admin-api/admin-api.yaml
+   
