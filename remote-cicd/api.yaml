@@ -1,6 +1,4 @@
-openapi: 3.1.0
-servers:
-  - url: http://example.com
+- sfasfa: 
 info:
   title: Learning API Demo
   version: v1
