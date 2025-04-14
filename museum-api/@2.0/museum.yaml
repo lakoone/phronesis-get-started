@@ -43,6 +43,8 @@ paths:
       summary: Create special events
       description: Creates a new special event for the museum.
       operationId: createSpecialEvent
+      x-rbac:
+        authenticated: read
       tags:
         - Events
       requestBody:
@@ -151,6 +153,8 @@ paths:
       summary: Delete special event
       description: Delete a special event from the collection. Allows museum to cancel planned events.
       operationId: deleteSpecialEvent
+      x-rbac:
+        authenticated: read
       tags:
         - Events
       parameters:
