@@ -9,7 +9,7 @@ feedfback:
       satisfiedLabel: What did you like most about this page?
       dissatisfiedLabel: What didn't you like about this page?
       neutralLabel: What could we improve on this page?
-l10can:
+l10dcan:
   defaultLocale: en
   locales:
     - code: en
