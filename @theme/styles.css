@@ -4,3 +4,6 @@
 :root.dark {
   --heading-text-color: rgb(246, 201, 39);
 }
+:root .card-variant-filled img {
+object-fit: contain;
+}

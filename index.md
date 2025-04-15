@@ -1,4 +1,17 @@
 {% partial file="/_partials/warning.md" /%}
+
+{% cards %}
+  {% card title="Mueseum API" to="projects/1/apis/museum.yaml" variant="elevated" %}
+    Museum API
+  {% /card %}
+  {% card title="Second card" image="images/redocly-logo.png" imagePosition="start" layout="horizontal" %}
+    I'm a card, _too_.
+  {% /card %}
+  {% card title="Third card" %}
+    I'm actually a brochure.
+  {% /card %}
+{% /cards %}
+
 # Start something new
 
 There's a real excitement to starting something new.
@@ -17,3 +30,4 @@ Build-in link checking and branch previews lets writers move quickly and safely 
 ## Good for readers
 
 Clean layout and a visible table of contents makes good content a pleasure to read and process.
+
