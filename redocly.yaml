@@ -3,7 +3,7 @@ logo:
 breadcrumbs:
   hide: true
 feedback:
-  type: mood
+  type: rating
   settings:
     comment:
       satisfiedLabel: What did you like most about this page?
