@@ -2,7 +2,7 @@
 # Why We Created This Information Architecture
 
 ## Comparing Different Approaches
-
+xxx
 When designing our website, we considered three different approaches for displaying our products:
 
 ### Option 1: Single Sidebar
