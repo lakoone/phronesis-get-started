@@ -2,7 +2,7 @@ logo:
   srcSet: "https://redocly.com/assets/redocly-white-logo.176e3e2d646a542bdc2590ae497b3b8ee3825605652af49b8790ab9e7a26335d.9c1bb791.svg light, ./images/redocly-logo.png dark"
 breadcrumbs:
   hide: true
-feedback:
+feedbaсk:
   type: rating
   settings:
     comment:
@@ -10,7 +10,7 @@ feedback:
       dissatisfiedLabel: What didn't you like about this page?
       neutralLabel: What could we improve on this page?
 l10n:
-  defaultLocale: en
+  defaultLocale: en У Привіт 
   locales:
     - code: en
       name: English
