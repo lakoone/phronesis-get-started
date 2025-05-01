@@ -16,6 +16,7 @@ l10n:
       name: English
     - code: ua
       name: Ukrainian
+fffass
 rbac:ss
   content:
     '/admin-api/**':
@@ -24,6 +25,7 @@ rbac:ss
       "Beta Testers": read 
  
 navbar:
+  fff
   items:
     - page: projects/1/apis/museum.yaml
       label: Museum
