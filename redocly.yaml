@@ -16,7 +16,7 @@ l10n:
       name: English
     - code: ua
       name: Ukrainian
-rbac:
+rbac:ss
   content:
     '/admin-api/**':
       redocly.owners: admin
