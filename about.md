@@ -1,7 +1,7 @@
 ---
 feedback:
   settings:
-    reason:
+    reason:ss
       component: radio
       label: Tell us more about the page
 ---
