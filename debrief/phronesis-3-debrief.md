@@ -2,7 +2,7 @@
 - Easy to change logo (dark/light mode support)
 - The documentation is well written
 - Easy to adjust redirects
-
+sa
 # What did you find confusing?
 * SVG logos don't react to theme changes (it would be great if the config supported a color adjustment for svg) 
 > for example using one `src` logo but different colors for dark/light mode
