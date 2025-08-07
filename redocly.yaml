@@ -2,30 +2,8 @@ logo:
   srcSet: "https://redocly.com/assets/redocly-white-logo.176e3e2d646a542bdc2590ae497b3b8ee3825605652af49b8790ab9e7a26335d.9c1bb791.svg light, ./images/redocly-logo.png dark"
 breadcrumbs:
   hide: true
-feedbaсk:
-  type: rating
-  settings:
-    comment:
-      satisfiedLabel: What did you like most about this page?
-      dissatisfiedLabel: What didn't you like about this page?
-      neutralLabel: What could we improve on this page?
-l10n:
-  defaultLocale: en У Привіт 
-  locales:
-    - code: en
-      name: English
-    - code: ua
-      name: Ukrainian
-fffass
-rbac:ss
-  content:
-    '/admin-api/**':
-      redocly.owners: admin
-      redocly.members: read
-      "Beta Testers": read 
- 
+
 navbar:
-  fff
   items:
     - page: projects/1/apis/museum.yaml
       label: Museum
@@ -73,6 +51,4 @@ footer:
           label: Markdoc
         - href: https://openapis.org
           label: OpenAPI
-versionPicker:
-  showForUnversioned: true
 
