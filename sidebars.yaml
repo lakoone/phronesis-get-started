@@ -11,7 +11,7 @@
 - group: Train Travel
   items:
     - page: projects/1/apis/trainTravel.yaml
-- group: Debriefs
+- group: Debriefss
   items:
     - directory: debrief
 - group: Admin
